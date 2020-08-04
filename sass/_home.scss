@@ -1,0 +1,38 @@
+.about {
+  max-width: 60%;
+  margin: 3rem auto;
+
+  
+  @media only screen and (max-width: $big-desktop) {
+    margin: 8rem auto;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    margin: 5rem auto;
+  }
+
+  @media only screen and (max-width: $tab-port) {
+    max-width: 75%;
+  }
+
+  @media only screen and (max-width: $small2) {
+    max-width: 85%;
+  }
+
+  @media only screen and (max-width: $smallest) {
+    max-width: 90%;
+  }
+
+  &__mission h1,
+  &__mission {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--color-text-dark);
+  }
+  
+  &__statement {
+    font-weight: 200;
+    color: var(--color-text-dark);
+  }
+}

@@ -240,12 +240,12 @@ module.exports = "/karaz-branding-8.11211cff.jpg";
 module.exports = "/karaz-kids-1.22f4baeb.jpg";
 },{}],"images/retail/karaz-kids-2.jpg":[function(require,module,exports) {
 module.exports = "/karaz-kids-2.5e539bf3.jpg";
+},{}],"images/retail/karaz-kids-3.jpg":[function(require,module,exports) {
+module.exports = "/karaz-kids-3.20f31a92.jpg";
 },{}],"images/retail/karaz-kids-4.jpg":[function(require,module,exports) {
 module.exports = "/karaz-kids-4.a336fbce.jpg";
 },{}],"images/retail/karaz-kids-5.jpg":[function(require,module,exports) {
 module.exports = "/karaz-kids-5.a3cd5a91.jpg";
-},{}],"images/retail/karaz-kids-3.jpg":[function(require,module,exports) {
-module.exports = "/karaz-kids-3.20f31a92.jpg";
 },{}],"images/retail/karaz-kids-6.jpg":[function(require,module,exports) {
 module.exports = "/karaz-kids-6.ec21f3ea.jpg";
 },{}],"images/retail/karaz-kids-7.jpg":[function(require,module,exports) {
@@ -285,9 +285,9 @@ module.exports = {
   "karaz-branding-8": require("./karaz-branding-8.jpg"),
   "karaz-kids-1": require("./karaz-kids-1.jpg"),
   "karaz-kids-2": require("./karaz-kids-2.jpg"),
+  "karaz-kids-3": require("./karaz-kids-3.jpg"),
   "karaz-kids-4": require("./karaz-kids-4.jpg"),
   "karaz-kids-5": require("./karaz-kids-5.jpg"),
-  "karaz-kids-3": require("./karaz-kids-3.jpg"),
   "karaz-kids-6": require("./karaz-kids-6.jpg"),
   "karaz-kids-7": require("./karaz-kids-7.jpg"),
   "karaz-kids-8": require("./karaz-kids-8.jpg"),
@@ -298,7 +298,7 @@ module.exports = {
   "via-pellegrino-3": require("./via-pellegrino-3.jpg"),
   "via-pellegrino-4": require("./via-pellegrino-4.jpg")
 };
-},{"./karaz-alhamra-1.jpg":"images/retail/karaz-alhamra-1.jpg","./karaz-alhamra-2.jpg":"images/retail/karaz-alhamra-2.jpg","./karaz-alhamra-3.jpg":"images/retail/karaz-alhamra-3.jpg","./karaz-alhamra-4.jpg":"images/retail/karaz-alhamra-4.jpg","./karaz-alhamra-5.jpg":"images/retail/karaz-alhamra-5.jpg","./karaz-alhamra-6.jpg":"images/retail/karaz-alhamra-6.jpg","./karaz-alhamra-7.jpg":"images/retail/karaz-alhamra-7.jpg","./karaz-alhamra-8.jpg":"images/retail/karaz-alhamra-8.jpg","./karaz-alhamra-9.jpg":"images/retail/karaz-alhamra-9.jpg","./karaz-branding-1.jpg":"images/retail/karaz-branding-1.jpg","./karaz-branding-2.jpg":"images/retail/karaz-branding-2.jpg","./karaz-branding-3.jpg":"images/retail/karaz-branding-3.jpg","./karaz-branding-4.jpg":"images/retail/karaz-branding-4.jpg","./karaz-branding-5.jpg":"images/retail/karaz-branding-5.jpg","./karaz-branding-6.jpg":"images/retail/karaz-branding-6.jpg","./karaz-branding-7.jpg":"images/retail/karaz-branding-7.jpg","./karaz-branding-8.jpg":"images/retail/karaz-branding-8.jpg","./karaz-kids-1.jpg":"images/retail/karaz-kids-1.jpg","./karaz-kids-2.jpg":"images/retail/karaz-kids-2.jpg","./karaz-kids-4.jpg":"images/retail/karaz-kids-4.jpg","./karaz-kids-5.jpg":"images/retail/karaz-kids-5.jpg","./karaz-kids-3.jpg":"images/retail/karaz-kids-3.jpg","./karaz-kids-6.jpg":"images/retail/karaz-kids-6.jpg","./karaz-kids-7.jpg":"images/retail/karaz-kids-7.jpg","./karaz-kids-8.jpg":"images/retail/karaz-kids-8.jpg","./karaz-nakheel-1.jpg":"images/retail/karaz-nakheel-1.jpg","./karaz-nakheel-2.jpg":"images/retail/karaz-nakheel-2.jpg","./via-pellegrino-1.jpg":"images/retail/via-pellegrino-1.jpg","./via-pellegrino-2.jpg":"images/retail/via-pellegrino-2.jpg","./via-pellegrino-3.jpg":"images/retail/via-pellegrino-3.jpg","./via-pellegrino-4.jpg":"images/retail/via-pellegrino-4.jpg"}],"js/retailgallery.js":[function(require,module,exports) {
+},{"./karaz-alhamra-1.jpg":"images/retail/karaz-alhamra-1.jpg","./karaz-alhamra-2.jpg":"images/retail/karaz-alhamra-2.jpg","./karaz-alhamra-3.jpg":"images/retail/karaz-alhamra-3.jpg","./karaz-alhamra-4.jpg":"images/retail/karaz-alhamra-4.jpg","./karaz-alhamra-5.jpg":"images/retail/karaz-alhamra-5.jpg","./karaz-alhamra-6.jpg":"images/retail/karaz-alhamra-6.jpg","./karaz-alhamra-7.jpg":"images/retail/karaz-alhamra-7.jpg","./karaz-alhamra-8.jpg":"images/retail/karaz-alhamra-8.jpg","./karaz-alhamra-9.jpg":"images/retail/karaz-alhamra-9.jpg","./karaz-branding-1.jpg":"images/retail/karaz-branding-1.jpg","./karaz-branding-2.jpg":"images/retail/karaz-branding-2.jpg","./karaz-branding-3.jpg":"images/retail/karaz-branding-3.jpg","./karaz-branding-4.jpg":"images/retail/karaz-branding-4.jpg","./karaz-branding-5.jpg":"images/retail/karaz-branding-5.jpg","./karaz-branding-6.jpg":"images/retail/karaz-branding-6.jpg","./karaz-branding-7.jpg":"images/retail/karaz-branding-7.jpg","./karaz-branding-8.jpg":"images/retail/karaz-branding-8.jpg","./karaz-kids-1.jpg":"images/retail/karaz-kids-1.jpg","./karaz-kids-2.jpg":"images/retail/karaz-kids-2.jpg","./karaz-kids-3.jpg":"images/retail/karaz-kids-3.jpg","./karaz-kids-4.jpg":"images/retail/karaz-kids-4.jpg","./karaz-kids-5.jpg":"images/retail/karaz-kids-5.jpg","./karaz-kids-6.jpg":"images/retail/karaz-kids-6.jpg","./karaz-kids-7.jpg":"images/retail/karaz-kids-7.jpg","./karaz-kids-8.jpg":"images/retail/karaz-kids-8.jpg","./karaz-nakheel-1.jpg":"images/retail/karaz-nakheel-1.jpg","./karaz-nakheel-2.jpg":"images/retail/karaz-nakheel-2.jpg","./via-pellegrino-1.jpg":"images/retail/via-pellegrino-1.jpg","./via-pellegrino-2.jpg":"images/retail/via-pellegrino-2.jpg","./via-pellegrino-3.jpg":"images/retail/via-pellegrino-3.jpg","./via-pellegrino-4.jpg":"images/retail/via-pellegrino-4.jpg"}],"js/retailgallery.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -463,7 +463,7 @@ function Gallery(gallery) {
     modalOuter.classList.add('hidden');
     setTimeout(() => {
       modalOuter.querySelector('.modal-loader').style.opacity = '1';
-    }, 1500); //Remove image menu
+    }, 1600); //Remove image menu
 
     sliderUI.innerHTML = ''; //Remove event listeners
 
@@ -545,7 +545,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58871" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52830" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

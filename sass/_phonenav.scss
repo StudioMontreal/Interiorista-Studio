@@ -1,0 +1,138 @@
+.phone-nav {
+
+  position: absolute;
+
+  @media only screen and (max-width: $smallest) {
+  position: relative;
+  }
+
+  &__checkbox {
+    display: none;
+    top: .5rem;
+    right: 4.6rem;
+    position: absolute;
+    z-index: 20;
+    pointer-events: none;
+
+    @media only screen and (max-width: $smallest) {
+      pointer-events: all;
+      // display: block;
+    }
+  }
+
+  &__button {
+    display: none;
+    pointer-events: none;
+
+    @media only screen and (max-width: $smallest) {
+    display: block;
+    pointer-events: all;
+    top: -.5rem;
+    right: 4rem;
+    position: absolute;
+    z-index: 25;
+    cursor: pointer;
+  }
+  }
+
+  &__background {
+    @media only screen and (max-width: $smallest) {
+      background-color: var(--color-grey-2);
+      position: fixed;
+      width: 200%;
+      height: 88%;
+      top: 9.5rem;
+      left: 0;
+      z-index: 15;
+      border-top: 1px solid var(--color-text-dark);
+      border-bottom: 1px solid var(--color-text-dark);
+      transition: all 1s;
+
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+
+  &__list {
+    opacity: 0;
+    pointer-events: none;
+
+    @media only screen and (max-width: $smallest) {
+    list-style: none;
+    position: absolute;
+    top: 7rem;
+    z-index: 20;
+    text-transform: uppercase;
+    width: 100%;
+    }
+  }
+  
+  &__item {
+    @media only screen and (max-width: $smallest) {
+    padding: 4rem;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    }
+  }
+
+  &__item a {
+    @media only screen and (max-width: $smallest) {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    }
+  }
+
+  &__checkbox:checked ~ &__background {
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  &__checkbox:checked ~ &__list {
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  &__icon {
+    position: relative;
+    // z-index: 20;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: .5px;
+      background-color: var(--color-text-dark);
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before { top: -.8rem; }
+    &::after { top: .8rem; }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  
+
+
+}

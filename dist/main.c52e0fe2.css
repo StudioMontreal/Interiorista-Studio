@@ -548,10 +548,11 @@ body {
   height: 38vw;
   width: auto;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+  z-index: 25;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
@@ -568,7 +569,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 6rem;
+  bottom: 10rem;
 }
 
 .goToPrev {
@@ -995,7 +996,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: absolute;
   z-index: 10;
   top: 43vh;
-  left: 73vh;
+  left: 50%;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
 }
 
 .ldio-e81vqw8f14 div {
@@ -1045,7 +1048,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   overflow: hidden;
   background: none;
-  z-index: 30;
+  z-index: 21;
 }
 
 .ldio-e81vqw8f14 {

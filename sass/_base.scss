@@ -1,0 +1,62 @@
+:root {
+  --color-grey-1: #eeeeee;
+  --color-grey-2: #f5f5f5;
+  --color-grey-3: rgb(219, 219, 219);
+  
+  --color-text-dark: rgb(44, 44, 44);
+  --color-text-med: #6e6e6e;
+  --color-text-light: #939598;
+
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+$big-desktop: 112.5em; //1800px
+$desktop: 88.12em; //1410px 
+$tab-land: 75em;     // 1200px
+$tab-lg: 1025px;    // 1000px
+$tab-port: 56.25em;   // 900px
+$small: 45.63em;     // 730px
+$small2: 41.5em;     // 665px
+$small3: 36.9em;     // 590px
+$smallest: 35.7em; // 570px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $tab-port) {
+    font-size: 50%;
+  }
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--color-text-light);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}

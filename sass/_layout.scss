@@ -1,0 +1,79 @@
+.container {
+  width: 92vw;
+  height: 87vh;
+  margin: 4rem auto 0rem auto;
+  overflow: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+
+
+  @media only screen and (max-width: $tab-lg) {
+    width: 90vw;
+    height: 93vh;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    width: 95vw;
+  }
+
+  @media only screen and (max-width: $smallest) {
+    width: 93vw;
+    height: 91vh;
+  }
+
+  &::-webkit-scrollbar { 
+    display: none; 
+}
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-container {
+  background-color: #fff;
+  height: 7rem; //height of container gtrows
+}
+
+.footer {
+  width: 100vw;
+  margin: 0rem auto;
+  background-color: var(--color-grey-1);
+
+  position: fixed;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: minmax(15rem, 25rem) 1fr;
+  grid-gap: 2rem;
+  
+  @media only screen and (max-width: $desktop) {
+    grid-template-columns: minmax(15rem, 20rem) 1fr;
+  }
+
+  @media only screen and (max-width: $small) {
+    grid-template-columns: 17rem 1fr;
+  }
+
+  @media only screen and (max-width: $small2) {
+    grid-template-columns: 14rem 1fr;
+  }
+
+  @media only screen and (max-width: $small3) {
+    grid-template-columns: 13rem 1fr;
+  }
+
+  @media only screen and (max-width: $smallest) {
+    grid-template-columns: 1fr;
+  }
+  
+}
